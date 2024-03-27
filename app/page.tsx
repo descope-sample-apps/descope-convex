@@ -8,19 +8,16 @@ import { Link } from "@/components/typography/link";
 import { useConvexAuth } from "convex/react";
 import { useDescope } from "@descope/nextjs-sdk/client";
 import { useCallback } from "react";
-import { useRouter } from "next/navigation";
 
 export default function Home() {
   const { isLoading, isAuthenticated } = useConvexAuth();
   const numbers = useQuery(api.myFunctions.listNumbers, { count: 10 });
   const addNumber = useMutation(api.myFunctions.addNumber);
   const sdk = useDescope();
-  const router = useRouter();
 
   const handleLogout = useCallback(() => {
-    sdk.logout();
-    router.push("/");
-  }, [router, sdk]);
+    void sdk.logout();
+  }, [sdk]);
 
   return (
     <main className="container max-w-2xl flex flex-col gap-8">
