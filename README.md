@@ -1,9 +1,10 @@
-````markdown
+<img width="1048" alt="image" src="https://github.com/descope-sample-apps/descope-convex/assets/32936811/f82b765e-4625-4b43-af1b-e3fa10a050b1">
+
 # Descope Convex Sample App 🚀
 
 This sample app showcases how to implement authentication in your Convex application using Descope.
 
-## 🧐 Under the Hood
+## Under the Hood 🧐
 
 Here's what happens when a user interacts with the authentication flow:
 
@@ -16,7 +17,7 @@ Here's what happens when a user interacts with the authentication flow:
 7. Your Convex backend validates the token with Descope to ensure its validity.
 8. `ConvexProviderWithDescope` manages token refetching as needed to maintain user authentication with your backend.
 
-## 🌟 Overview of the Application
+## Overview of the Application 🌟
 
 Upon landing, users encounter a **Log in** button. Once authenticated:
 
@@ -24,22 +25,25 @@ Upon landing, users encounter a **Log in** button. Once authenticated:
 - Generating and adding a new number appends it to the list via a Convex mutation.
 - A "Log Out" button allows users to end their session.
 
-## Setting up the App
+## Setting up the App 💿
 
 Setting up the app involves a few additional steps due to the authentication feature:
 
-1. Populate `.env.local.example` with your values:
+1. Copy over the `.env.local.example` to a `.env.local` file with your specific values:
 
 ```env
-CONVEX_DEPLOYMENT=dev:dynamic-example
-NEXT_PUBLIC_CONVEX_URL=https://dynamic-example.convex.cloud
+CONVEX_DEPLOYMENT=dev:<Your Convex Project>
+NEXT_PUBLIC_CONVEX_URL= <Your Convex URL>
 NEXT_PUBLIC_DESCOPE_PROJECT_ID="<Your Descope Project ID>"
 ```
-````
 
 2. Launch the app. You'll encounter an error message containing a link directing you to your Convex dashboard to configure your environment variables. Complete this setup and configure the `NEXT_PUBLIC_DESCOPE_PROJECT_ID` in Convex as well.
 
+<img width="400" alt="Monosnap Environment Variables | Dev | descope-convex | Convex Dashboard 2024-03-27 14-57-08" src="https://github.com/descope-sample-apps/descope-convex/assets/32936811/00f0a47c-00a5-4309-abab-f911dd3b698b">
+
 3. In your **Descope Project Settings**, ensure **Generate AWS API Gateway Compliant JWT** is enabled. This adjusts the Issuer URL in the OIDC token to align with Convex specifications.
+
+<img width="400" alt="image" src="https://github.com/descope-sample-apps/descope-convex/assets/32936811/02e61625-cc66-440e-b3bb-069e234d3979">
 
 4. Navigate to the project directory and install the necessary dependencies:
 
@@ -49,7 +53,7 @@ yarn install
 
 After these steps, you're set to sign in and explore the application!
 
-## 🏃‍♂️ Running the App
+## Running the App 🏃‍♂️
 
 Once you've configured your app, you're ready to run it:
 
