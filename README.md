@@ -4,6 +4,8 @@
 
 This sample app showcases how to implement authentication in your Convex application using Descope.
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/descope-sample-apps/descope-convex)
+
 ## Under the Hood 🧐
 
 Here's what happens when a user interacts with the authentication flow:
@@ -39,11 +41,11 @@ NEXT_PUBLIC_DESCOPE_PROJECT_ID="<Your Descope Project ID>"
 
 2. Launch the app. You'll encounter an error message containing a link directing you to your Convex dashboard to configure your environment variables. Complete this setup and configure the `NEXT_PUBLIC_DESCOPE_PROJECT_ID` in Convex as well.
 
-<img width="400" alt="Monosnap Environment Variables | Dev | descope-convex | Convex Dashboard 2024-03-27 14-57-08" src="https://github.com/descope-sample-apps/descope-convex/assets/32936811/00f0a47c-00a5-4309-abab-f911dd3b698b">
+![Convex Dashboard](https://github.com/descope-sample-apps/descope-convex/assets/32936811/00f0a47c-00a5-4309-abab-f911dd3b698b)
 
 3. In your **Descope Project Settings**, ensure **Generate AWS API Gateway Compliant JWT** is enabled. This adjusts the Issuer URL in the OIDC token to align with Convex specifications.
 
-<img width="400" alt="image" src="https://github.com/descope-sample-apps/descope-convex/assets/32936811/02e61625-cc66-440e-b3bb-069e234d3979">
+![Descope Project Settings](https://github.com/descope-sample-apps/descope-convex/assets/32936811/02e61625-cc66-440e-b3bb-069e234d3979)
 
 4. Navigate to the project directory and install the necessary dependencies:
 
@@ -70,10 +72,10 @@ If you encounter any issues or have questions, consult the Grafbase and Descope 
 - [Convex Documentation](https://docs.convex.dev/auth/custom-auth)
 - [Descope Authentication](https://docs.descope.com)
 
-## Contributing
+## Contributing 🤝
 
 Contributions are welcome! Please feel free to submit a pull request or open an issue if you have suggestions or improvements.
 
-## License
+## License 📄
 
-This sample app is open-source and available under the MIT License. See the LICENSE file for more details.
+This sample app is open-source and available under the MIT License. See the [LICENSE](LICENSE) file for more details.
