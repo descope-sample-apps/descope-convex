@@ -4,7 +4,7 @@
 
 This sample app showcases how to implement authentication in your Convex application using Descope.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/descope-sample-apps/descope-convex)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdescope-sample-apps%2Fdescope-convex&env=CONVEX_DEPLOYMENT,NEXT_PUBLIC_CONVEX_URL,NEXT_PUBLIC_DESCOPE_PROJECT_ID)
 
 ## Under the Hood 🧐
 
