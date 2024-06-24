@@ -37,7 +37,9 @@ Setting up the app involves a few additional steps due to the authentication fea
 CONVEX_DEPLOYMENT=dev:<Your Convex Project>
 NEXT_PUBLIC_CONVEX_URL= <Your Convex URL>
 NEXT_PUBLIC_DESCOPE_PROJECT_ID="<Your Descope Project ID>"
+NEXT_PUBLIC_ISSUER_URL="<Your Issuer URL>"
 ```
+`NEXT_PUBLIC_ISSUER_URL`: can be found in your Descope Console under the [Applications page](https://app.descope.com/applications) and editing the active application
 
 2. Launch the app. You'll encounter an error message containing a link directing you to your Convex dashboard to configure your environment variables. Complete this setup and configure the `NEXT_PUBLIC_DESCOPE_PROJECT_ID` in Convex as well.
 
