@@ -1,4 +1,4 @@
-<img width="1048" alt="image" src="https://github.com/descope-sample-apps/descope-convex/assets/32936811/f82b765e-4625-4b43-af1b-e3fa10a050b1">
+<img width="1920" height="1221" alt="image" src="https://github.com/user-attachments/assets/6d9e32e9-5e9c-4b1b-a2e6-5741b97688ed" /><img width="1048" alt="image" src="https://github.com/descope-sample-apps/descope-convex/assets/32936811/f82b765e-4625-4b43-af1b-e3fa10a050b1">
 
 # Descope Convex Sample App 🚀
 
@@ -45,9 +45,13 @@ NEXT_PUBLIC_ISSUER_URL="<Your Issuer URL>"
 
 ![Convex Dashboard](https://github.com/descope-sample-apps/descope-convex/assets/32936811/00f0a47c-00a5-4309-abab-f911dd3b698b)
 
-3. In your **Descope Project Settings**, ensure **Generate AWS API Gateway Compliant JWT** is enabled. This adjusts the Issuer URL in the OIDC token to align with Convex specifications.
+3.
+a. In your Descope Console, go to Project Settings → JWT Templates and create a new User JWT template using the AWS API Gateway preset. This sets the Issuer URL to https://api.descope.com/<Project ID>, aligning the token with Convex's OIDC requirements.
 
-![Descope Project Settings](https://github.com/descope-sample-apps/descope-convex/assets/32936811/02e61625-cc66-440e-b3bb-069e234d3979)
+b. Go to Project Settings → Session Management → User JWT Token Format and set it to the template you just created.
+
+![Descope Project Settings](https://github.com/user-attachments/assets/e12a53f7-910c-4a86-bcba-f55b88f11e6d)
+
 
 4. Navigate to the project directory and install the necessary dependencies:
 
