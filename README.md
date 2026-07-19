@@ -50,7 +50,7 @@ a. In your Descope Console, go to Project Settings → JWT Templates and create 
 
 b. Go to Project Settings → Session Management → User JWT Token Format and set it to the template you just created.
 
-![Descope Project Settings]<img width="1920" height="1221" alt="image" src="https://github.com/user-attachments/assets/e12a53f7-910c-4a86-bcba-f55b88f11e6d" />
+![Descope Project Settings](https://github.com/user-attachments/assets/e12a53f7-910c-4a86-bcba-f55b88f11e6d)
 
 
 4. Navigate to the project directory and install the necessary dependencies:
